@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Мой сайт на Pug + Bootstrap</title>
+    <!-- Скомпилированный CSS-->
+    <link rel="stylesheet" href="/assets/css/main.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="col-12 d-md-block d-none">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="nav-bar1__temples-container d-flex col-lg-4 col-md-5 py-2"><a class="d-block secondary-link" href="">Временная ссылка</a><a class="d-block secondary-link" href="">Временная ссылка 2</a></div>
+            <div class="d-flex justify-content-end align-items-center col-lg-8 col-md-7 py-2">
+              <div class="d-flex align-items-center justify-content-center">
+                <div class="nav-bar1__partners-container d-flex align-items-center justify-content-between me-lg-5 me-md-3"><a class="d-block primary-link" href="#">Партнерский сайт</a><a class="d-block primary-link" href="#">Партнерский сайт</a></div><a class="primary-link me-lg-3 me-md-2" href="tel:+74732701188">+7 (473) 270-11-88</a>
+                <button class="language-switcher me-lg-2 me-md-1"><img src="/assets/images/russia.png"></button>
+                <button class="language-switcher"><img src="/assets/images/united-kingdom.png"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 d-md-none d-block">
+          <div class="d-flex nav-bar1__mobile-container">
+            <div class="nav-bar1__mobile-info-container d-flex col-10 align-items-center"><a class="primary-link me-lg-3 me-md-2" href="tel:+74732701188">+7 (473) 270-11-88</a></div>
+            <div class="nav-bar1__burger-container">
+              <!-- Кнопка бургер (в header)-->
+              <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMain" aria-controls="offcanvasMain" aria-label="Открыть меню"><img src="/assets/images/menu-burger.png" alt="menu" width="28" height="28"></button>
+              <!-- Само offcanvas-меню-->
+              <div class="offcanvas offcanvas-start offcanvas-custom" id="offcanvasMain" tabindex="-1" aria-labelledby="offcanvasMainLabel" data-bs-scroll="true">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasMainLabel">Меню</h5>
+                  <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+                </div>
+                <!-- Верх: телефон + флаги-->
+                <div class="offcanvas-topbar"><a class="offcanvas-phone" href="tel:+79990000000">+7 (999) 000-00-00</a>
+                  <ul class="offcanvas-lang">
+                    <li>
+                      <button class="language-switcher" type="button" aria-label="Русский"><img src="/assets/images/russia.png" alt="RU"></button>
+                    </li>
+                    <li>
+                      <button class="language-switcher" type="button" aria-label="English"><img src="/assets/images/united-kingdom.png" alt="EN"></button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="offcanvas-body">
+                  <!-- Навигация (один уровень вложенности)-->
+                  <nav class="offcanvas-nav">
+                    <ul class="menu-root">
+                      <li><a class="menu-link" href="/">Главная</a></li>
+                      <li>
+                        <!-- пункт с подменю//menu-collapsible(type="button" data-bs-toggle="collapse" data-bs-target="#submenuProducts" aria-expanded="false" aria-controls="submenuProducts")
+                        --><a class="menu-link" href="/">Продукция</a>
+                        <!--.collapse#submenuProducts-->
+                        <ul class="menu-sub">
+                          <li><a class="menu-sublink" href="/production/seeder">Зерновые сеялки</a></li>
+                          <li><a class="menu-sublink" href="/production/parts">Запчасти</a></li>
+                        </ul>
+                      </li>
+                      <li><a class="menu-link" href="/services">Услуги</a></li>
+                      <li><a class="menu-link" href="/contacts">Контакты</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <!-- Низ: дополнительная информация-->
+                <div class="offcanvas-footer"><a class="d-block py-1 secondary-link" href="">Временная ссылка</a><a class="d-block py-1 secondary-link" href="">Временная ссылка 2</a><a class="d-block py-1 primary-link" href="#">Партнерский сайт</a><a class="d-block py-1 primary-link" href="#">Партнерский сайт</a>
+                  <!--p.small.text-muted-->
+                  <!--    | ООО «ТСА», ИНН 1234567890 · © #{new Date().getFullYear()}-->
+                  <!--a.small(href="/privacy") Политика конфиденциальности-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar2__container">
+        <div class="container">
+          <div class="navbar2 col-12 d-flex justify-content-center align-items-center pt-1 pb-3"><img class="navbar2-logo me-lg-5 me-md-3" src="/assets/images/tese-logo.svg">
+            <h2>Производство сельскохозяйственных машин&nbsp;и&nbsp;оборудования</h2>
+          </div>
+        </div>
+      </div>
+      <nav class="d-md-block d-none">
+        <ul class="navbar3 d-flex justify-content-center align-items-center">
+          <li><a class="active" href="/">Главная</a></li>
+          <li><a href="/production.html">Продукция</a></li>
+          <li><a href="/manufacture">Производство</a></li>
+          <li><a href="/contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container pt-4">
+        <div class="section-hero">
+          <div class="swiper js-hero-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="/assets/images/img.png" alt=""></div>
+              <div class="swiper-slide"><img src="/assets/images/img_1.png" alt=""></div>
+              <div class="swiper-slide"><img src="/assets/images/img_2.png" alt=""></div>
+              <div class="hero-image-overlay">
+                <h2>ТСА</h2>
+                <p>Техника сервис агро</p>
+              </div>
+            </div>
+            <div class="swiper-button-prev js-hero-prev"></div>
+            <div class="swiper-button-next js-hero-next"></div>
+            <div class="swiper-pagination js-hero-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="col-12 mt-3">
+          <section class="section_text-content">
+            <h1 class="text-center">ООО "Техника Сервис Агро"</h1>
+            <p class="text-justify">Развитие с 1992 года сектора производства сельскохозяйственной техники в группе компаний «Техника Сервис» привело к необходимости создания для этого направления отдельного предприятия с собственной производственной базой и сетью сбыта.</p>
+            <p>В 2013 году было образовано Общество с ограниченной ответственностью "Техника Сервис Агро".</p>
+          </section>
+        </div>
+      </div>
+      <div class="container">
+        <div class="col-12">
+          <section class="section_text-content">
+            <h2 class="text-center">Сегодня ТСА – это</h2>
+            <p class="text-justify">
+              конструкторское бюро, разрабатывающее и постоянно совершенствующее самые современные сельскохозяйственные машины;
+              мощная производственная площадка, расположенная в ближнем пригороде Воронежа на площади 6 Га, из них 3 Гектара под крышей. Современные цеха, развитая инфраструктура, промышленное оборудование лучших мировых производителей, включая роботизированные комплексы, автоматическую линию покраски, станки с ЧПУ, позволяют выпускать продукцию мирового уровня в практически неограниченном количестве;
+              торговый комплекс с выставочным залом, делающий общение с нашими партнерами максимально продуктивным и комфортным;
+              развитая дилерская сеть, приближающая поставки оборудования, запасных частей и сервиса прямо к покупателю.
+              Стратегическим ориентиром компании является производство оборудования, на котором наши покупатели зарабатывают максимальную прибыль с минимальными издержками на эксплуатацию и ремонт. И этот подход окупается – подавляющее большинство пользователей техники бренда «Техника Сервис» предпочитают и в дальнейшем покупать наши машины.
+            </p>
+            <p>Приглашаем Вас стать партнером одной из самых надежных компаний на Российском рынке – ООО ТСА.</p><a class="button-link" href="#">Подробнее</a>
+          </section>
+        </div>
+      </div>
+      <div class="container">
+        <div class="col-12">
+          <section class="section_image-content"><img src="/assets/images/img_2.png"></section>
+        </div>
+      </div>
+      <div class="light-background">
+        <div class="container">
+          <div class="col-12">
+            <section class="section_text-content">
+              <h2 class="text-center">Производство сельхозтехники</h2>
+              <p class="text-justify">Основная продукция ООО "Техника Сервис Агро" – сеялки точного высева, сеялки зерновые и машины для очистки и транспортировки зерна. Являясь сходными по назначению с оборудованием других производителей, наши машины существенно отличаются от них конструктивно. Ежегодные посещения крупнейших мировых выставок сельскохозяйственной техники приносят свои плоды: совершенствование производства на нашем предприятии не прекращается.</p><a class="button-link" href="#">Подробнее</a>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="col-12">
+          <section class="section_text-content">
+            <h2 class="text-center">Продукция</h2>
+            <p class="text-justify">Мы производим машины в основном для двух направлений сельского хозяйства. Оборудование послеуборочной обработки – зерноочистительные машины для всех видов очистки зерна, зернометатели и погрузчики зерна, нории зерновые, транспортеры и множество сопутствующего оборудования, такого как зернопровода, решета на многие зерноочистительные машины, системы аспирации и др. Второе направление – сеялки точного высева для пропашных культур, сеялки зерновые и машины предпосевной и послепосевной обработки почвы, такие как культиваторы и кольчато-зубчатые полевые катки.</p>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container px-3">
+        <div class="col-12 d-flex align-items-center justify-content-center flex-md-row flex-column">
+          <div class="d-flex col-lg-8 col-md-7 align-items-center justify-content-center flex-md-row flex-column-reverse">
+            <div class="footer__contacts col-lg-6 col-md-8 d-flex justify-content-start flex-column">
+              <p>394065 г.Воронеж, проспект Патриотов, 75</p>
+              <div><a href="tel:+74732701188">+7 (473) 270-11-88</a></div>
+              <div><a href="mailto:mail@tese.ru">mail@tese.ru</a></div>
+            </div>
+            <div class="footer__logo col-lg-6 col-md-4 d-flex justify-content-center align-items-center flex-column">
+              <h3>ТСА</h3>
+              <p>Техника сервис агро</p>
+            </div>
+          </div>
+          <div class="footer__social_media col-lg-4 col-md-5 d-flex justify-content-end align-items-center"><a class="d-block"><img src="/assets/images/telegram.png"></a><a class="d-block"><img src="/assets/images/whats-up.png"></a><a class="d-block"><img src="/assets/images/you-tube.png"></a><a class="d-block"><img src="/assets/images/vk.png"></a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="/assets/js/bundle.js"></script>
+  </body>
+</html>

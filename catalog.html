@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Мой сайт на Pug + Bootstrap</title>
+    <!-- Скомпилированный CSS-->
+    <link rel="stylesheet" href="/assets/css/main.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="col-12 d-md-block d-none">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="nav-bar1__temples-container d-flex col-lg-4 col-md-5 py-2"><a class="d-block secondary-link" href="">Временная ссылка</a><a class="d-block secondary-link" href="">Временная ссылка 2</a></div>
+            <div class="d-flex justify-content-end align-items-center col-lg-8 col-md-7 py-2">
+              <div class="d-flex align-items-center justify-content-center">
+                <div class="nav-bar1__partners-container d-flex align-items-center justify-content-between me-lg-5 me-md-3"><a class="d-block primary-link" href="#">Партнерский сайт</a><a class="d-block primary-link" href="#">Партнерский сайт</a></div><a class="primary-link me-lg-3 me-md-2" href="tel:+74732701188">+7 (473) 270-11-88</a>
+                <button class="language-switcher me-lg-2 me-md-1"><img src="/assets/images/russia.png"></button>
+                <button class="language-switcher"><img src="/assets/images/united-kingdom.png"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 d-md-none d-block">
+          <div class="d-flex nav-bar1__mobile-container">
+            <div class="nav-bar1__mobile-info-container d-flex col-10 align-items-center"><a class="primary-link me-lg-3 me-md-2" href="tel:+74732701188">+7 (473) 270-11-88</a></div>
+            <div class="nav-bar1__burger-container">
+              <!-- Кнопка бургер (в header)-->
+              <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMain" aria-controls="offcanvasMain" aria-label="Открыть меню"><img src="/assets/images/menu-burger.png" alt="menu" width="28" height="28"></button>
+              <!-- Само offcanvas-меню-->
+              <div class="offcanvas offcanvas-start offcanvas-custom" id="offcanvasMain" tabindex="-1" aria-labelledby="offcanvasMainLabel" data-bs-scroll="true">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasMainLabel">Меню</h5>
+                  <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+                </div>
+                <!-- Верх: телефон + флаги-->
+                <div class="offcanvas-topbar"><a class="offcanvas-phone" href="tel:+79990000000">+7 (999) 000-00-00</a>
+                  <ul class="offcanvas-lang">
+                    <li>
+                      <button class="language-switcher" type="button" aria-label="Русский"><img src="/assets/images/russia.png" alt="RU"></button>
+                    </li>
+                    <li>
+                      <button class="language-switcher" type="button" aria-label="English"><img src="/assets/images/united-kingdom.png" alt="EN"></button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="offcanvas-body">
+                  <!-- Навигация (один уровень вложенности)-->
+                  <nav class="offcanvas-nav">
+                    <ul class="menu-root">
+                      <li><a class="menu-link" href="/">Главная</a></li>
+                      <li>
+                        <!-- пункт с подменю//menu-collapsible(type="button" data-bs-toggle="collapse" data-bs-target="#submenuProducts" aria-expanded="false" aria-controls="submenuProducts")
+                        --><a class="menu-link" href="/">Продукция</a>
+                        <!--.collapse#submenuProducts-->
+                        <ul class="menu-sub">
+                          <li><a class="menu-sublink" href="/production/seeder">Зерновые сеялки</a></li>
+                          <li><a class="menu-sublink" href="/production/parts">Запчасти</a></li>
+                        </ul>
+                      </li>
+                      <li><a class="menu-link" href="/services">Услуги</a></li>
+                      <li><a class="menu-link" href="/contacts">Контакты</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <!-- Низ: дополнительная информация-->
+                <div class="offcanvas-footer"><a class="d-block py-1 secondary-link" href="">Временная ссылка</a><a class="d-block py-1 secondary-link" href="">Временная ссылка 2</a><a class="d-block py-1 primary-link" href="#">Партнерский сайт</a><a class="d-block py-1 primary-link" href="#">Партнерский сайт</a>
+                  <!--p.small.text-muted-->
+                  <!--    | ООО «ТСА», ИНН 1234567890 · © #{new Date().getFullYear()}-->
+                  <!--a.small(href="/privacy") Политика конфиденциальности-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar2__container">
+        <div class="container">
+          <div class="navbar2 col-12 d-flex justify-content-center align-items-center pt-1 pb-3"><img class="navbar2-logo me-lg-5 me-md-3" src="/assets/images/tese-logo.svg">
+            <h2>Производство сельскохозяйственных машин&nbsp;и&nbsp;оборудования</h2>
+          </div>
+        </div>
+      </div>
+      <nav class="d-md-block d-none">
+        <ul class="navbar3 d-flex justify-content-center align-items-center">
+          <li><a class="active" href="/">Главная</a></li>
+          <li><a href="/production.html">Продукция</a></li>
+          <li><a href="/manufacture">Производство</a></li>
+          <li><a href="/contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container py-4">
+        <div class="breadcrumbs"><a class="breadcrumb-item" href="#">Зерновая сеялка ЗС-4</a><span>/</span><a class="breadcrumb-item" href="#">Каталог: Зерновая сеялка ЗС-4-9.00.00.00.000</a><span>/</span><a class="breadcrumb-item" href="#">Электрочасть БКЗС-9</a></div>
+        <div class="d-flex col-12 pt-md-4 pt-2 flex-md-row flex-column-reverse">
+          <div class="product-info__container col-md-4 col-12">
+            <div class="product-info">
+              <div class="info-item">
+                <div class="info-item__name">Наименование</div>
+                <div class="info-item__value">Электрочасть БКЗС-9</div>
+              </div>
+              <div class="info-item">
+                <div class="info-item__name">Артикул</div>
+                <div class="info-item__value">Какой-то артикул</div>
+              </div>
+              <div class="info-item">
+                <div class="info-item__name">Спецификация</div>
+                <div class="info-item__value">ЗС-9 на 15.10.2024</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 col-12">
+            <div class="product-gallery">
+              <div class="section-gallery">
+                <div class="swiper js-gallery">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a class="gallery-item" href="/assets/images/img.png" data-pswp-src="/assets/images/img.png" data-pswp-width="1920" data-pswp-height="1080" data-caption="Фото 1"><img src="/assets/images/img.png" alt="Фото 1"></a></div>
+                    <div class="swiper-slide"><a class="gallery-item" href="/assets/images/img_1.png" data-pswp-src="/assets/images/img_1.png" data-pswp-width="1920" data-pswp-height="1280" data-caption="Фото 2"><img src="/assets/images/img_1.png" alt="Фото 2"></a></div>
+                  </div>
+                  <div class="swiper-button-prev js-gallery-prev"></div>
+                  <div class="swiper-button-next js-gallery-next"></div>
+                  <div class="swiper-pagination js-gallery-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="catalog-h2">Компоненты</h2>
+        <div class="tca-card">
+          <div class="tca-table">
+            <!-- Header-->
+            <div class="tca-table__head">
+              <div class="tca-table__th">Наименование (Ajax)
+              </div>
+              <div class="tca-table__th">Артикул
+              </div>
+              <div class="tca-table__th">Количество
+              </div>
+            </div>
+            <!-- Body-->
+            <div class="tca-table__body"><a class="tca-table__tr is-active">
+                <div class="tca-table__td">Гайка M16-8.019
+                </div>
+                <div class="tca-table__td">ГОСТ 5915-70
+                </div>
+                <div class="tca-table__td"><span class="tca-table__qty">32</span>
+                </div></a><a class="tca-table__tr">
+                <div class="tca-table__td">Гайка M16-8.019
+                </div>
+                <div class="tca-table__td">ГОСТ 5915-70
+                </div>
+                <div class="tca-table__td"><span class="tca-table__qty">32</span>
+                </div></a>
+            </div>
+          </div>
+          <div class="tca-pagination"><a class="tca-pagination__prev" href="/list?page=1">Предыдущая</a>
+            <div class="tca-pagination__numbers"><a class="tca-pagination__num" href="/list?page=1">1</a><a class="tca-pagination__num is-current" href="/list?page=2">2</a><span class="tca-pagination__gap">…</span><a class="tca-pagination__num" href="/list?page=10">10</a>
+            </div><a class="tca-pagination__next" href="/list?page=3">Следующая</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container px-3">
+        <div class="col-12 d-flex align-items-center justify-content-center flex-md-row flex-column">
+          <div class="d-flex col-lg-8 col-md-7 align-items-center justify-content-center flex-md-row flex-column-reverse">
+            <div class="footer__contacts col-lg-6 col-md-8 d-flex justify-content-start flex-column">
+              <p>394065 г.Воронеж, проспект Патриотов, 75</p>
+              <div><a href="tel:+74732701188">+7 (473) 270-11-88</a></div>
+              <div><a href="mailto:mail@tese.ru">mail@tese.ru</a></div>
+            </div>
+            <div class="footer__logo col-lg-6 col-md-4 d-flex justify-content-center align-items-center flex-column">
+              <h3>ТСА</h3>
+              <p>Техника сервис агро</p>
+            </div>
+          </div>
+          <div class="footer__social_media col-lg-4 col-md-5 d-flex justify-content-end align-items-center"><a class="d-block"><img src="/assets/images/telegram.png"></a><a class="d-block"><img src="/assets/images/whats-up.png"></a><a class="d-block"><img src="/assets/images/you-tube.png"></a><a class="d-block"><img src="/assets/images/vk.png"></a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="/assets/js/bundle.js"></script>
+  </body>
+</html>

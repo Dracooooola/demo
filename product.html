@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Мой сайт на Pug + Bootstrap</title>
+    <!-- Скомпилированный CSS-->
+    <link rel="stylesheet" href="/assets/css/main.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="col-12 d-md-block d-none">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="nav-bar1__temples-container d-flex col-lg-4 col-md-5 py-2"><a class="d-block secondary-link" href="">Временная ссылка</a><a class="d-block secondary-link" href="">Временная ссылка 2</a></div>
+            <div class="d-flex justify-content-end align-items-center col-lg-8 col-md-7 py-2">
+              <div class="d-flex align-items-center justify-content-center">
+                <div class="nav-bar1__partners-container d-flex align-items-center justify-content-between me-lg-5 me-md-3"><a class="d-block primary-link" href="#">Партнерский сайт</a><a class="d-block primary-link" href="#">Партнерский сайт</a></div><a class="primary-link me-lg-3 me-md-2" href="tel:+74732701188">+7 (473) 270-11-88</a>
+                <button class="language-switcher me-lg-2 me-md-1"><img src="/assets/images/russia.png"></button>
+                <button class="language-switcher"><img src="/assets/images/united-kingdom.png"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 d-md-none d-block">
+          <div class="d-flex nav-bar1__mobile-container">
+            <div class="nav-bar1__mobile-info-container d-flex col-10 align-items-center"><a class="primary-link me-lg-3 me-md-2" href="tel:+74732701188">+7 (473) 270-11-88</a></div>
+            <div class="nav-bar1__burger-container">
+              <!-- Кнопка бургер (в header)-->
+              <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMain" aria-controls="offcanvasMain" aria-label="Открыть меню"><img src="/assets/images/menu-burger.png" alt="menu" width="28" height="28"></button>
+              <!-- Само offcanvas-меню-->
+              <div class="offcanvas offcanvas-start offcanvas-custom" id="offcanvasMain" tabindex="-1" aria-labelledby="offcanvasMainLabel" data-bs-scroll="true">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasMainLabel">Меню</h5>
+                  <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+                </div>
+                <!-- Верх: телефон + флаги-->
+                <div class="offcanvas-topbar"><a class="offcanvas-phone" href="tel:+79990000000">+7 (999) 000-00-00</a>
+                  <ul class="offcanvas-lang">
+                    <li>
+                      <button class="language-switcher" type="button" aria-label="Русский"><img src="/assets/images/russia.png" alt="RU"></button>
+                    </li>
+                    <li>
+                      <button class="language-switcher" type="button" aria-label="English"><img src="/assets/images/united-kingdom.png" alt="EN"></button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="offcanvas-body">
+                  <!-- Навигация (один уровень вложенности)-->
+                  <nav class="offcanvas-nav">
+                    <ul class="menu-root">
+                      <li><a class="menu-link" href="/">Главная</a></li>
+                      <li>
+                        <!-- пункт с подменю//menu-collapsible(type="button" data-bs-toggle="collapse" data-bs-target="#submenuProducts" aria-expanded="false" aria-controls="submenuProducts")
+                        --><a class="menu-link" href="/">Продукция</a>
+                        <!--.collapse#submenuProducts-->
+                        <ul class="menu-sub">
+                          <li><a class="menu-sublink" href="/production/seeder">Зерновые сеялки</a></li>
+                          <li><a class="menu-sublink" href="/production/parts">Запчасти</a></li>
+                        </ul>
+                      </li>
+                      <li><a class="menu-link" href="/services">Услуги</a></li>
+                      <li><a class="menu-link" href="/contacts">Контакты</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <!-- Низ: дополнительная информация-->
+                <div class="offcanvas-footer"><a class="d-block py-1 secondary-link" href="">Временная ссылка</a><a class="d-block py-1 secondary-link" href="">Временная ссылка 2</a><a class="d-block py-1 primary-link" href="#">Партнерский сайт</a><a class="d-block py-1 primary-link" href="#">Партнерский сайт</a>
+                  <!--p.small.text-muted-->
+                  <!--    | ООО «ТСА», ИНН 1234567890 · © #{new Date().getFullYear()}-->
+                  <!--a.small(href="/privacy") Политика конфиденциальности-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar2__container">
+        <div class="container">
+          <div class="navbar2 col-12 d-flex justify-content-center align-items-center pt-1 pb-3"><img class="navbar2-logo me-lg-5 me-md-3" src="/assets/images/tese-logo.svg">
+            <h2>Производство сельскохозяйственных машин&nbsp;и&nbsp;оборудования</h2>
+          </div>
+        </div>
+      </div>
+      <nav class="d-md-block d-none">
+        <ul class="navbar3 d-flex justify-content-center align-items-center">
+          <li><a class="active" href="/">Главная</a></li>
+          <li><a href="/production.html">Продукция</a></li>
+          <li><a href="/manufacture">Производство</a></li>
+          <li><a href="/contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="navbar4 d-md-block">
+        <div class="container">
+          <nav>
+            <ul class="col-12 d-flex justify-content-md-center justify-content-start align-items-center">
+              <li><a class="active" href="">Описание</a></li>
+              <li><a href=""> Технические характеристики</a></li>
+              <li><a href=""> Документы</a></li>
+              <li><a href=""> Каталоги</a></li>
+              <li><a href=""> Сервис</a></li>
+              <li><a href=""> Референс лист</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="container py-4">
+        <div class="product col-12">
+          <h1>Зерновая сеялка ЗС-4</h1>
+          <div class="d-flex flex-column-reverse flex-lg-row">
+            <div class="col-lg-4 col-12">
+              <p class="product__paragraph text-justify">
+                Зерновая сеялка ЗС-4 предназначена для рядового посева семян зерновых (пшеница, рожь, ячмень, овес), зернобобовых (горох, соя), для посева семян с одновременным внесением минеральных удобрений (или без него) или для подкормки озимых.
+                ЗС-4 является младшей моделью в линейке выпускаемых ООО «ТСА» зерновых сеялок. Простота конструкции и проверенные временем узлы (вариатор, высевающий аппарат, диск сошника и пр.), ранее сконструированных зерновых сеялок, дали недорогую и надежную модель для хозяйств, работающих по классической технологии. Особенностями данной машины являются междурядье 12,5 см и более легкий вес в отличие от остальной линейки зерновых сеялок ООО «ТСА». Сеялка зерновая ЗС-4 может комплектоваться транспортным устройством.
+              </p>
+            </div>
+            <div class="col-lg-8 col-12">
+              <div class="product-gallery">
+                <div class="section-gallery">
+                  <div class="swiper js-gallery">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><a class="gallery-item" href="/assets/images/img.png" data-pswp-src="/assets/images/img.png" data-pswp-width="1920" data-pswp-height="1080" data-caption="Фото 1"><img src="/assets/images/img.png" alt="Фото 1"></a></div>
+                      <div class="swiper-slide"><a class="gallery-item" href="/assets/images/img_1.png" data-pswp-src="/assets/images/img_1.png" data-pswp-width="1920" data-pswp-height="1280" data-caption="Фото 2"><img src="/assets/images/img_1.png" alt="Фото 2"></a></div>
+                    </div>
+                    <div class="swiper-button-prev js-gallery-prev"></div>
+                    <div class="swiper-button-next js-gallery-next"></div>
+                    <div class="swiper-pagination js-gallery-pagination"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="product__paragraph text-justify pt-2 mb-0">ЗС-4 является младшей моделью в линейке выпускаемых ООО «ТСА» зерновых сеялок. Простота конструкции и проверенные временем узлы (вариатор, высевающий аппарат, диск сошника и пр.), ранее сконструированных зерновых сеялок, дали недорогую и надежную модель для хозяйств, работающих по классической технологии. Особенностями данной машины являются междурядье 12,5 см и более легкий вес в отличие от остальной линейки зерновых сеялок ООО «ТСА». Сеялка зерновая ЗС-4 может комплектоваться транспортным устройством.</p>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container px-3">
+        <div class="col-12 d-flex align-items-center justify-content-center flex-md-row flex-column">
+          <div class="d-flex col-lg-8 col-md-7 align-items-center justify-content-center flex-md-row flex-column-reverse">
+            <div class="footer__contacts col-lg-6 col-md-8 d-flex justify-content-start flex-column">
+              <p>394065 г.Воронеж, проспект Патриотов, 75</p>
+              <div><a href="tel:+74732701188">+7 (473) 270-11-88</a></div>
+              <div><a href="mailto:mail@tese.ru">mail@tese.ru</a></div>
+            </div>
+            <div class="footer__logo col-lg-6 col-md-4 d-flex justify-content-center align-items-center flex-column">
+              <h3>ТСА</h3>
+              <p>Техника сервис агро</p>
+            </div>
+          </div>
+          <div class="footer__social_media col-lg-4 col-md-5 d-flex justify-content-end align-items-center"><a class="d-block"><img src="/assets/images/telegram.png"></a><a class="d-block"><img src="/assets/images/whats-up.png"></a><a class="d-block"><img src="/assets/images/you-tube.png"></a><a class="d-block"><img src="/assets/images/vk.png"></a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="/assets/js/bundle.js"></script>
+  </body>
+</html>
