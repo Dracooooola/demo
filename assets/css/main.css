@@ -12586,7 +12586,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-button-prev {
-  background-image: url("/assets/images/arrow-left.png");
+  background-image: url("assets/images/arrow-left.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -12594,7 +12594,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-button-next {
-  background-image: url("/assets/images/arrow-right.png");
+  background-image: url("assets/images/arrow-right.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
