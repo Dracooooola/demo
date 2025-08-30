@@ -12662,6 +12662,17 @@ button.swiper-pagination-bullet {
   text-align: center;
 }
 
+.swiper-pagination {
+  z-index: 200;
+  bottom: 16px; /* привычный отступ */
+}
+
+/* учёт iOS safe-area (iPhone с «полоской дома») */
+@supports (bottom: env(safe-area-inset-bottom)) {
+  .swiper-pagination {
+    bottom: calc(16px + env(safe-area-inset-bottom));
+  }
+}
 .product-item {
   background-color: #FAFAFA;
   margin: 0.5rem;
@@ -12911,7 +12922,7 @@ button.swiper-pagination-bullet {
 }
 @media (max-width: 767.98px) {
   .footer {
-    padding: 0.75rem 0;
+    padding: 0.75rem 0 1.5rem;
     text-align: center;
   }
 }
